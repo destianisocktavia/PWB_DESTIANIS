@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kalkulator</title>
+</head>
+<body>
+	<h1 align="center">Kalukalor</h1>
+	<form >
+		<table>
+			<tr>
+				<td>Nilai 1</td>
+				<td>:</td>
+				<td><input type="number" id="nilai_1" name="nilai_1"></td>
+			</tr>
+			<tr>
+				<td>Nilai 2</td>
+				<td>:</td>
+				<td><input type="number" id="nilai_2" name="nilai_2"></td>
+			</tr>
+			
+			<tr>
+				<td>Hasil</td>
+				<td>:</td>
+				<td><input type="number" id="hasil" name="hasil"></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="button" class="tombol" onclick="tambah()" value="+">
+					<input type="button" class="tombol" onclick="kurang()" value="-">
+					<input type="button" class="tombol" onclick="kali()" value="*">
+					<input type="button" class="tombol" onclick="bagi()" value="/">
+					<input type="button" class="tombol" onclick="pangkat()" value="^">
+				</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+<script type="text/javascript">
+	function tambah(){
+		var nilai_1 = document.getElementById('nilai_1').value
+		var nilai_2 = document.getElementById('nilai_2').value
+		var hasil = parseFloat(nilai_1) +   parseFloat(nilai_2);
+		document.getElementById('hasil').value = hasil
+	}
+	function kurang(){
+		var nilai_1 = document.getElementById('nilai_1').value
+		var nilai_2 = document.getElementById('nilai_2').value
+		var hasil = parseFloat(nilai_1) -   parseFloat(nilai_2);
+		document.getElementById('hasil').value = hasil
+	}
+	function kali(){
+		var nilai_1 = document.getElementById('nilai_1').value
+		var nilai_2 = document.getElementById('nilai_2').value
+		var hasil = parseFloat(nilai_1) *   parseFloat(nilai_2);
+		document.getElementById('hasil').value = hasil
+	}
+	function bagi(){
+		var nilai_1 = document.getElementById('nilai_1').value
+		var nilai_2 = document.getElementById('nilai_2').value
+		var hasil = parseFloat(nilai_1) /   parseFloat(nilai_2);
+		document.getElementById('hasil').value = hasil
+	}
+	function pangkat(){
+		var nilai_1 = document.getElementById('nilai_1').value
+		// var nilai_2 = document.getElementById('nilai_2').value
+		var hasil = parseFloat(nilai_1) *   parseFloat(nilai_1);
+		document.getElementById('hasil').value = hasil
+	}
+</script>
+</html>
