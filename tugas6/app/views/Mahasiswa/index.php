@@ -50,6 +50,7 @@ badge badge-primary" >detail</a>
      <h5 class="modal-title" id="judulModal">Tambah Data Mahasiswa</h5>
      <button type="button" class="btn-close" data-dismiss="modal" arialabel="Close"></button>
      </div>
+     
       <div class="modal-body">
         <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
          <div class="form-group">
