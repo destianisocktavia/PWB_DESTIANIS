@@ -1,0 +1,2 @@
+[19-Dec-2019 06:49:57 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/wandemo/public_html/master.v2/application/controllers/Auth.php on line 12
+[19-Dec-2019 06:50:05 UTC] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE) in /home/wandemo/public_html/master.v2/application/controllers/Auth.php on line 12
